@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+   const fetchPupolar = async() => {
+    const data = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=f2e349fe9e8ecced437343534e51774f&language=en-US&page=1')
+   }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          tessss
-        </a>
-      </header>
+        <h1>Hello</h1>   
     </div>
   );
 }
