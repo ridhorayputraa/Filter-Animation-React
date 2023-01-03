@@ -1,7 +1,7 @@
-function Movie(){
+function Movie({movie}){
     return(
         <div>
-            <h2>Title</h2>
+            <h2>{movie.title}</h2>
             <img src="" alt="" />
         </div>
     )

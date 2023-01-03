@@ -20,7 +20,7 @@ function App() {
     <div className="App">
           <div className="popular-movies">
             {popular.map(movie => {
-              return <Movie/>
+              return <Movie key={movie.id} movie={movie}/>
             })}
           </div>
     </div>
