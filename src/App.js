@@ -21,14 +21,19 @@ function App() {
     setFiltered(movies.results)
   }
 
-  return (
+  return ( 
     <div className="App">
-         <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre}/>
-          <div className="popular-movies">
+         <Filter 
+         popular={popular} 
+         setFiltered={setFiltered} 
+         activeGenre={activeGenre} 
+         setActiveGenre={setActiveGenre}/>
+         
+          <motion.div layout className="popular-movies">
             {filtered.map(movie => {
               return <Movie key={movie.id} movie={movie}/>
             })}
-          </div>
+          </motion.div>
     </div>
   );
 }

@@ -1,9 +1,11 @@
+import { motion } from "framer-motion";
+
 function Movie({movie}){
     return(
-        <div>
+        <motion.div layout>
             <h2>{movie.title}</h2>
             <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt="" />
-        </div>
+        </motion.div>
     )
 }
 
