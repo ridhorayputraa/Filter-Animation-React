@@ -6,6 +6,8 @@ import Filter from './filter';
 function App() {
 
   const [popular, setPopular] = useState([]);
+  const [filtered, setFiltered] = useState([]);
+  const [activeGenre, setActiveGenre] = useState(0)
 
   useEffect(() => {
         fetchPupolar();
@@ -15,6 +17,7 @@ function App() {
     const data = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=f2e349fe9e8ecced437343534e51774f&language=en-US&page=1')
     const movies = await data.json()
     setPopular(movies.results)
+    setFiltered(movies.results)
   }
 
   return (
