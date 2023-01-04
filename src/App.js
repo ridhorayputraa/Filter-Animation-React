@@ -33,6 +33,7 @@ function App() {
           
            layout 
            className="popular-movies">
+           {/* for fading in and fading out */}
               <AnimatePresence>
             {filtered.map(movie => {
 
