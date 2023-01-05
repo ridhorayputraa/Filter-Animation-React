@@ -29,6 +29,7 @@ function App() {
          activeGenre={activeGenre} 
          setActiveGenre={setActiveGenre}/>
          
+         {/* From framer motion */}
           <motion.div 
           
            layout 
